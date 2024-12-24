@@ -1,0 +1,2 @@
+Explicação da correção:
+No código original, a variável x não foi inicializada antes de ser utilizada na condição do if. Isso pode levar a comportamentos inesperados, pois o conteúdo da variável x é indefinido. Para corrigir esse problema, foi adicionada a inicialização da variável x com o valor 0 antes de utilizá-la na condição do if, garantindo assim que o código funcione corretamente.

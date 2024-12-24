@@ -1,0 +1,3 @@
+Explicação da correção:
+- O problema no código original era que a chamada para liberar a memória alocada com malloc estava fora do loop, o que resultava em um vazamento de memória, já que o ponteiro 'a' estava sendo realocado a cada iteração sem liberar a memória anteriormente alocada.
+- A correção foi feita movendo a chamada para a função free(a) para dentro do loop, garantindo que a memória alocada em cada iteração seja liberada antes de alocar novamente. Dessa forma, evitamos o vazamento de memória.

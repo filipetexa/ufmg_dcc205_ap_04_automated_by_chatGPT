@@ -1,0 +1,3 @@
+Explicação da correção:
+- O problema no código original está na condição do loop for, onde a variável `i` é incrementada até 27. No entanto, a alocação de memória para o array `source` é feita apenas para 26 elementos. Isso significa que ao acessar a posição 26 do array `source`, estaremos acessando uma posição de memória não alocada, o que pode resultar em comportamento indefinido.
+- A correção consiste em ajustar a condição do loop para `i < 26`, garantindo que o acesso aos elementos do array `source` esteja dentro dos limites da memória alocada. Dessa forma, evitamos possíveis problemas de acesso indevido à memória.

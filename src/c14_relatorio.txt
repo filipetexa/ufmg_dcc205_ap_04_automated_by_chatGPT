@@ -1,0 +1,2 @@
+Explicação da correção:
+- Foi adicionada a inicialização da variável `fact` com 1, pois na linha 7 do código original o valor de `fact` não estava sendo inicializado e poderia conter lixo de memória, o que poderia resultar em um cálculo errado do fatorial. Agora, ao inicializar `fact` com 1, garantimos que o cálculo do fatorial será feito corretamente.

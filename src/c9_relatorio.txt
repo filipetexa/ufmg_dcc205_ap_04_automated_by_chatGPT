@@ -1,0 +1,4 @@
+Explicação da correção:
+1. O problema identificado no código original é que o índice utilizado para acessar a posição do array estava incorreto. O array `x` tem tamanho 10, então as posições válidas vão de 0 a 9. Ao acessar `x[10]`, estava ocorrendo um acesso indevido à memória, pois ultrapassava os limites do array.
+2. A correção foi feita alterando o índice para `x[9]`, que corresponde à última posição válida do array.
+3. Também foi adicionado o comando `free(x)` para liberar a memória alocada para o array `x` antes de encerrar a função `f()`, evitando vazamento de memória.

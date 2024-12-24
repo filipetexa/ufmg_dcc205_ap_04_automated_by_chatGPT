@@ -1,0 +1,3 @@
+Explicação:
+- Foi adicionada uma verificação para garantir que a alocação de memória foi bem-sucedida. Caso contrário, uma mensagem de erro é exibida e o programa é encerrado.
+- Foi adicionado o comando `free(intArray)` para liberar a memória alocada dinamicamente antes de encerrar o programa. Isso evita vazamento de memória.

@@ -1,0 +1,3 @@
+Explicação da correção:
+- O problema identificado no código original era que a função main estava retornando o valor de argc, que representa a quantidade de argumentos passados para o programa na linha de comando. No entanto, como não estamos utilizando nenhum argumento na função main, não faz sentido retornar argc. 
+- A correção realizada foi simplesmente alterar o retorno da função main para 0, que é um valor padrão indicando que o programa foi executado com sucesso.

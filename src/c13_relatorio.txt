@@ -1,0 +1,4 @@
+Explicação da correção:
+1. O problema inicial era que o ponteiro `p` estava alocando memória duas vezes sem liberar a memória alocada anteriormente, o que causava um vazamento de memória.
+2. Para corrigir, foi adicionado o comando `free(p);` logo após a primeira alocação de memória, para liberar a memória alocada antes de fazer uma nova alocação.
+3. Dessa forma, evitamos o vazamento de memória ao liberar a memória antes de fazer uma nova alocação.

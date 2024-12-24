@@ -1,0 +1,3 @@
+Explicação da correção:
+- O problema identificado no código original era que estava sendo alocado espaço apenas para 10 elementos no array 'a', porém o loop de preenchimento estava acessando a posição 10, o que é um acesso inválido, resultando em um erro de segmentação.
+- A correção realizada foi simplesmente aumentar o tamanho da alocação de memória para 11 elementos, de forma que o loop de preenchimento possa acessar corretamente todas as posições do array.

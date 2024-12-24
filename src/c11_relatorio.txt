@@ -1,0 +1,3 @@
+Explicação da correção:
+1. Foi corrigido o tamanho alocado para a string `msg` no `malloc` para 9 bytes, considerando os 8 caracteres de "Holberton" mais o caractere nulo no final da string.
+2. Adicionada a função `free(msg)` para liberar a memória alocada dinamicamente antes do programa encerrar, evitando vazamento de memória.

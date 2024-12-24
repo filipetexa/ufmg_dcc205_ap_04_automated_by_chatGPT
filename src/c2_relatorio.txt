@@ -1,0 +1,4 @@
+Explicação da correção:
+No código original, o primeiro loop que preenche o array 'a' tinha um limite de i < 9, o que resultava em apenas 9 elementos sendo preenchidos (índices 0 a 8). No entanto, no segundo loop de impressão, o código tentava acessar o índice 9, que não havia sido inicializado, resultando em um valor indefinido sendo exibido. 
+
+A correção foi simplesmente ajustar o limite do primeiro loop para i < 10, garantindo que todos os 10 elementos do array 'a' sejam preenchidos corretamente. Dessa forma, ao imprimir os valores, todos os elementos do array são exibidos corretamente.

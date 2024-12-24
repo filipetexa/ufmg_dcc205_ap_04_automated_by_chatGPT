@@ -1,0 +1,3 @@
+Explicação da correção:
+- No código original, o `calloc` estava alocando espaço apenas para 26 caracteres, porém é necessário alocar espaço para 27 caracteres para armazenar as 26 letras do alfabeto e o caractere nulo que indica o final da string.
+- Na linha onde é feita a atribuição do caractere nulo, foi corrigido para acessar a posição 26 do array `alphabet`, que é onde o caractere nulo deve ser armazenado para indicar o final da string corretamente.

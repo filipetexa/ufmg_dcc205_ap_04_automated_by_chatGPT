@@ -1,0 +1,5 @@
+Explicação da correção:
+1. Foi corrigido o erro de não alocar memória para a variável `rotation3D` no início da função `main`.
+2. A memória foi alocada adequadamente para a struct `Matrix` e para o array de ponteiros `data`.
+3. Foi adicionado um loop para liberar a memória alocada para cada linha de dados antes de liberar a memória dos ponteiros das linhas e da struct `Matrix`.
+4. Comentários foram adicionados para explicar cada parte do código corrigido.

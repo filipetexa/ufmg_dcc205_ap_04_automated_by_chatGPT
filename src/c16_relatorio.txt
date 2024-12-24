@@ -1,0 +1,3 @@
+Explicação da correção:
+- Foi adicionada uma verificação no código da função actual_calc para garantir que a divisão só será realizada se o divisor (b) for diferente de zero, evitando assim uma divisão por zero.
+- Dessa forma, o código corrigido irá evitar o problema de divisão por zero que existia no código original.

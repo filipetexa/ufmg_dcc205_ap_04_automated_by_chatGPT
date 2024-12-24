@@ -1,0 +1,5 @@
+Explicação da correção:
+1. Definimos o tamanho do array `buf` na declaração, evitando um erro de acesso à memória não alocada.
+2. Removemos a verificação `if(line != NULL)` após a chamada de `fgets`, pois a função `fgets` sempre retorna uma string válida.
+3. Corrigimos a formatação da string em `sprintf` para garantir que o resultado da função `sum_to_n` seja corretamente inserido na string `buf`.
+4. Não foi necessário fazer nenhuma alteração no loop `for` da função `sum_to_n`, pois ele estava correto.
